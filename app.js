@@ -36,6 +36,12 @@ app.get("/", (req, res) => {
     .catch( err => console.log(err))
 });
 
+// ============新增餐廳頁面============
+app.get("/restaurants/new" , (req, res) => {
+  res.render("new")
+})
+
+
 //============show頁面路由設定============
 app.get("/restaurants/:restaurantId", (req, res) => {
   //req.params，可抓取路由的變數資訊
@@ -59,11 +65,6 @@ app.get("/search", (req, res) => {
      res.render("index",{ restaurantsData:searchRestaurant , wordValue:req.query.keywords})
     })
     .catch( err => console.log(err))
-})
-
-// ============新增餐廳頁面============
-app.get("/restaurant/new" , (req, res) => {
-  res.render("new")
 })
 
 //新增餐廳

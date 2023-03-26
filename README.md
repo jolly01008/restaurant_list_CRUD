@@ -18,30 +18,46 @@
 ## 開始使用
 
 1. 請先確認有安裝 node.js 與 npm
+
 2. 將專案 clone 到本地
-3. 在本地開啟之後，透過終端機進入資料夾，輸入：
 
-   ```bash
-   npm install
-   ```
+3. 開啟終端機(Terminal)，進入存放此專案的資料夾
 
-4. 安裝完畢後，繼續輸入：
+```
+cd restaurant_list_CRUD
+```
 
-   ```bash
-   npm run start
-   ```
+4. 安裝所需套件
 
-5. 若看見此行訊息則代表順利運行，打開瀏覽器進入到以下網址
+```
+npm i express@4.16.4 express-handlebars@3.0.0 method-override@3.0.0
+```
 
-   ```bash
-   Listening on http://localhost:3000
-   ```
+5. 安裝 mongoose
 
-6. 若欲暫停使用
+```
+npm i mongoose@5.9.7
+```
 
-   ```bash
-   ctrl + c
-   ```
+6. 安裝 nodemon (如已安裝可跳過此步驟)
+
+```
+npm install -g nodemon
+```
+
+7. 匯入種子檔案
+
+8. 啟動伺服器，執行 app.js 檔案
+
+```
+npm run dev
+```
+
+9. 當 terminal 出現以下字樣，表示伺服器已啟動
+
+> Express is running on http://localhost:3000
+>
+> mongodb connected!
 
 ## 開發工具
 
@@ -54,5 +70,5 @@
 - MongoDB
 - mongoose 5.9.7
 
--body-parser 1.20.2
--dotenv 16.0.3
+- body-parser 1.20.2
+- dotenv 16.0.3
